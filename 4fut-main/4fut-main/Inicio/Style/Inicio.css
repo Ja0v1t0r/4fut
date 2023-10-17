@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.LogoNav {
+    height: 100%;
+    width: 20%;
+    /* background-color: aqua; */
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.LogoNav img {
+
+    width: 55px;
+}
+
+.ListaNav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    height: 100%;
+    width: 30%;
+    /* background-color: chartreuse; */
+}
+
+.ListaNav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ListaNav ul li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ContaNav {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+
+
+}
+
+.ContaNav button {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 130px;
+    height: 30px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.Aviso {
+    width: 100%;
+    padding-top: 50px;
+    /* position: fixed; */
+    background-color: #D9D9D9;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.AvisoN {
+    display: none;
+}
+
+.SairAviso {
+    width: 100%;
+}
+
+
+.SairAviso button{
+    border: 0;
+    background-color: #D9D9D9;
+}
+
+.SairAviso i{
+    font-size: 25px;
+}
+    
+
+
+.BotaoAviso {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 70px;
+
+}
+
+.BotaoAviso button {
+    width: 180px;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.verde {
+    height: 50px;
+    background-color: #1D9C00;
+}
+
+.TopNews {
+    height: 900px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Noticias {
+    height: 1000px;
+    width: 1000px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.N1 {
+    background-color: rgb(236, 236, 236);
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ImagemN1 {
+    background-color: #d9d9d9;
+    height: 300px;
+    width: 500px;
+    object-fit: fill;
+}
+
+.ImagemN1 img {
+    height: 100%;
+}
+
+.DescricaoN1 {
+    width: 300px;
+}
+
+.SegundaLinhaNoticias {
+    height: 200px;
+    width: 100%;
+    /* background-color: #44e3ff; */
+    justify-content: space-between;
+    display: flex;
+}
+
+.N2 {
+    width: 23%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.ImagemN2{
+    height: 75%;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.N3 {
+    width: 23%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.ImagemN3{
+    height: 75%;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+.N4 {
+    width: 23%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.ImagemN4{
+    height: 75%;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.N5 {
+    width: 23%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.ImagemN5{
+    height: 75%;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+.TerceiraLinhaNoticias{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    /* background-color: darkseagreen; */
+}
+
+.N6{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+}
+.N7{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+}
+
+.ImagemN6{
+    width: 50%;
+    height: 100%;
+    background-color: #D9D9D9;
+}
+.ImagemN7{
+    width: 50%;
+    height: 100%;
+    background-color: #D9D9D9;
+}
+
+@media (max-width: 720px) {
+
+
+.ListaNav{
+   display:  none;
+}
+.ContaNav{
+    display: none;
+}
+.LogoNav img{
+    width: 35px;
+}
+.LogoNav{
+    font-size: 35px;
+}
+
+.bi.bi-person-circle{
+    color: white;
+}
+
+.bi.bi-three-dots{
+    color: white;
+}
+
+.ConteudoAviso{
+    
+}
+.BemVindo{
+    display: flex;
+    justify-content: center;
+    width: 67%;
+}
+
+
+
+
+
+
+
+
+
+}
