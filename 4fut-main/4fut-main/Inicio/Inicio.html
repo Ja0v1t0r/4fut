@@ -10,13 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="/4fut-main/Inicio/Style/Inicio.css">
+    <link rel="stylesheet" type="text/css" href="glider.css">
 </head>
 
 <body>
     <header>
 
         <nav>
-            <div class="mobile-menu"><i class="bi bi-three-dots"></i></div>
+            <div class="mobile-menu"><button onclick="MenuBurguer()"><i class="bi bi-three-dots"></i></button></div>
             <div class="LogoNav"><img src="/4fut-main/Inicio/Img/Logo Png (1).png" alt="LOGO">FOURFUT</div>
             <div class="ListaNav">
                 <ul>
@@ -34,6 +35,15 @@
             </div>
         </nav>
     </header>
+    <div class="ListaNavMobile Desativado" id="MenuMobile">
+        <ul>
+            <li><a href="#">Times</a></li>
+            <li><a href="#">Competições</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#"><i class="bi bi-search"></i></a></li>
+
+        </ul>
+    </div>
     <div id="box-msg" class="Aviso">
         <div class="SairAviso"><button onclick="FecharAviso()"><i class="bi bi-x"></i></button></div>
 
@@ -95,10 +105,47 @@
 
         </div>
     </div>
+    <section class="Baixo">
+        <div class="glider-contain">
+            <div class="glider">
+              <div>your content here</div>
+              <div>your content here</div>
+              <div>your content here</div>
+              <div>your content here</div>
+            </div>
+          
+            <button aria-label="Previous" class="glider-prev">«</button>
+            <button aria-label="Next" class="glider-next">»</button>
+            <div role="tablist" class="dots"></div>
+          </div>
+        <!-- <div class="Competicoes">
+            <div class="Visivel Competicoes">
+                <ul>
+                    <li><a class="item 1" href="#"><div class="1Competicao"></div></a></li>
+                    <li><a class="item 2" href="#"><div class="2Competicao"></div></a></li>
+                    <li><a class="item 3" href="#"><div class="3Competicao"></div></a></li>
+                    <li><a class="item 4" href="#"><div class="4Competicao"></div></a></li>
+                    <li><a class="item 5" href="#"><div class="5Competicao"></div></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Times">
+            <div class="Visivel Times">
+                <ul>
+                    <li><a class="item 1" href="#"><div class="1Time"></div></a></li>
+                    <li><a class="item 2" href="#"><div class="2Time"></div></a></li>
+                    <li><a class="item 3" href="#"><div class="3Time"></div></a></li>
+                    <li><a class="item 4" href="#"><div class="4Time"></div></a></li>
+                    <li><a class="item 5" href="#"><div class="5Time"></div></a></li>
+                </ul>
+            </div>
+        </div> -->
+    </section>
     <div id="conteudo">
 
     </div>
     <script type="text/javascript" src="/4fut-main/Inicio/script/Inicio.js"></script>
+    <script src="glider.js"></script>
 </body>
 
 </html>
