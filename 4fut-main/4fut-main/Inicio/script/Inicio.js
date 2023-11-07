@@ -48,7 +48,15 @@ function MenuBurguer() {
 //   tituloElement.textContent = titulo;
 //   imagemElement.src = imagemURL;
 
+// let maxIterations = 7; // Número máximo de iterações padrão
 
+// if (window.innerWidth <= 720) {
+//     maxIterations = 5; // Reduza o número de iterações para 5 em telas menores
+// }
+
+// for (let i = 0; i <= maxIterations; i++) {
+//     // Seu código para cada iteração do loop aqui
+// }
  
 //   })
 
@@ -56,7 +64,16 @@ fetch('https://newsapi.org/v2/everything?q=futebol&sortBy=popularity&language=pt
 .then(response => response.json())
 .then(data => {
 
-  for (let i = 0; i <= 7; i++) {
+  let maxIterations = 4; // Número máximo de iterações padrão
+
+if (window.innerWidth <= 720) {
+    maxIterations = 2; // Reduza o número de iterações para 5 em telas menores
+}
+
+for (let i = 0; i <= maxIterations; i++) {
+    // Seu código para cada iteração do loop aqui
+
+  // for (let i = 0; i <= 7; i++) {
     // Acesse o título, a URL da imagem e a descrição dos dados recebidos da API
     const titulo = data.articles[i].title;
     const imagemURL = data.articles[i].urlToImage;
@@ -151,26 +168,48 @@ fetch('https://newsapi.org/v2/everything?q=futebol&sortBy=popularity&language=pt
 //     console.error('Erro ao buscar os dados da API:', error);
 //   });
 
-  const slider = document.querySelector('.slider');
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+//   const slider = document.querySelector('.slider');
+// const slides = document.querySelectorAll('.slide');
+// let currentSlide = 0;
 
-function moveSlide(direction) {
-  if (direction === 'next') {
-    currentSlide++;
-  } else if (direction === 'prev') {
-    currentSlide--;
-  }
+// function moveSlide(direction) {
+//   if (direction === 'next') {
+//     currentSlide++;
+//   } else if (direction === 'prev') {
+//     currentSlide--;
+//   }
 
-  currentSlide = Math.max(0, Math.min(currentSlide, slides.length - 1));
+//   currentSlide = Math.max(0, Math.min(currentSlide, slides.length - 1));
   
-  const slideWidth = slides[0].offsetWidth;
-  const offset = -currentSlide * slideWidth;
+//   const slideWidth = slides[0].offsetWidth;
+//   const offset = -currentSlide * slideWidth;
 
-  slider.style.transform = `translateX(${offset}px)`;
-}
+//   slider.style.transform = `translateX(${offset}px)`;
+// }
 
-document.querySelector('#nextButton').addEventListener('click', () => moveSlide('next'));
-document.querySelector('#prevButton').addEventListener('click', () => moveSlide('prev'));
+// document.querySelector('#nextButton').addEventListener('click', () => moveSlide('next'));
+// document.querySelector('#prevButton').addEventListener('click', () => moveSlide('prev'));
 
 
+
+// $(document).ready(function(){
+//   $('.your-class').slick({
+//     setting-name: setting-value
+//   });
+// });
+
+// $('.slider-for').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav'
+// });
+// $('.slider-nav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-for',
+//   dots: true,
+//   centerMode: true,
+//   focusOnSelect: true
+// });
