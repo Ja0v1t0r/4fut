@@ -1,10 +1,32 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
 }
 
-header {
+/* Menu Header */
+.ContainerMobile {
+    display: none;
+}
+.navbar{
+    padding: 0;
+}
+
+.line{
+    width: 27%;
+    height: 1px;
+    rotate: 90deg;
+    background-color: #fff;
+    margin-top: 18px;
+}
+
+.dropdown-menu a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+}
+/* header {
     position: fixed;
     width: 100%;
 }
@@ -18,27 +40,15 @@ nav {
     background-color: black;
     z-index: 100;
 }
-
-.LogoNav {
-    height: 100%;
-    width: 20%;
-    /* background-color: aqua; */
-    color: #FFF;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+*/
+.LogoNav{
+    width: 50px;
 }
-
-.LogoNav img {
+/*  */
+/* .LogoNav img {
 
     width: 55px;
-}
+} */
 
 .ListaNav {
     display: flex;
@@ -92,14 +102,21 @@ nav {
     height: 30px;
     border: 0;
     border-radius: 8px;
-}
+} */
+/*  */
+.Aviso a {
 
+    color: #000;
+    text-decoration: none
+}
 .Aviso {
+
     width: 100%;
-    padding-top: 50px;
+
+    /* padding-top: 50px; */
     /* position: relative; */
     background-color: #D9D9D9;
-    height: 150px;
+    /* height: 170px; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -131,7 +148,7 @@ nav {
     justify-content: center;
     align-items: end;
     height: 70px;
-
+    margin-bottom: 10px;
 }
 
 .BotaoAviso button {
@@ -142,12 +159,15 @@ nav {
     background-color: #fff;
 }
 
-/* .verde {
-    
-    height: 50px;
-    background-color: #1D9C00;
-} */
+.BotaoAviso button a {
+    text-decoration: none;
+    color: #000;
+}
 
+/* Corpo */
+body{
+    background-color: #D9D9D9;
+}
 .TopNews {
     /* height: 900px; */
     background-color: black;
@@ -157,13 +177,14 @@ nav {
 }
 
 .Noticias {
-    height: 1000px;
+    /* height: 1500px; */
     width: 1000px;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding-top: 550px
+    margin-top: 20px
+    /* padding-top: 550px */
 }
 
 .Noticias a p {
@@ -172,7 +193,7 @@ nav {
 }
 
 .N1 {
-    z-index: ;
+   
     padding: 10px;
     height: 300px;
     display: flex;
@@ -184,6 +205,7 @@ nav {
 .N1 h1 {
     text-align: center;
     color: #FFF;
+    font-size:35px ;
 }
 
 .N1 p {
@@ -193,13 +215,14 @@ nav {
 
 .ImagemN1 {
     background-color: #d9d9d9;
-    height: 300px;
+    /* height: 300px; */
     /* width: 500px; */
     object-fit: fill;
 }
 
 .ImagemN1 img {
     height: 100%;
+    width: 100%;
 }
 
 .DescricaoN1 {
@@ -220,9 +243,7 @@ nav {
     display: none;
 }
 
-.mobile-menu {
-    display: none;
-}
+
 
 .slider-container{
     display: flex;
@@ -251,7 +272,9 @@ nav {
   }
 
 
-
+  .bi.bi-person-circle{
+    display: none;
+  }
 
 
 
@@ -259,6 +282,38 @@ nav {
 
 @media (max-width: 720px) {
 
+    .bi.bi-person-circle{
+        display: block;
+      }
+    
+    .btn-group.dropstart{
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+
+    .navbar-nav.me-auto.mb-2.mb-lg-0 li a{
+        font-size: 20px;
+    }
+
+    .navbar-brand{
+        margin: 0;
+    }
+
+    .navbar-toggler-icon{
+        color: #fff;
+    }
+
+    .navbar-collapse.collapse{
+        display: none;
+    }
+    .navbar-collapse.collapse.show{
+        display: block;
+        height: 20px;
+        background-color: #000;
+        margin-bottom:  90px;
+}
 
     .ListaNav {
         display: none;
@@ -316,7 +371,7 @@ nav {
     }
 
     .Noticias {
-        padding-top: 40vh;
+        /* padding-top: 40vh; */
     }
 
     .ImagemN1 {
@@ -333,6 +388,13 @@ nav {
     }
 
     /* MENU MOBILE */
+    .navbar-nav.me-auto.mb-2.mb-lg-0{
+        display: flex;
+    justify-content: center;
+    flex-direction: row;
+    }
+    
+   
 
     .ListaNavMobile {
         display: block;
